@@ -1,4 +1,0 @@
-Tunc      | Merhaba
-Tunc      | Bir bilgi almak istiyorum
-tunc      | merhaba
-tunc      | nas%u0131ls%u0131n%u0131z
