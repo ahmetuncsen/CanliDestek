@@ -78,7 +78,7 @@ var show_newmsg_on_bottom=1;     /* set to 0 to let new msg´s appear on top */
 var waittime=3000;        /* time between chat refreshes (ms) */
 
 intUpdate=window.setTimeout("read_cont();", waittime);
-chatwindow.value = "loading...";
+chatwindow.value = "lutfen sorununuzu yazin...";
 
 function read_cont()         { zeit = new Date(); ms = (zeit.getHours() * 24 * 60 * 1000) + (zeit.getMinutes() * 60 * 1000) + (zeit.getSeconds() * 1000) + zeit.getMilliseconds(); ajax_request2("chat.txt?x=" + ms); }
 function display_msg(msg1)     { chatwindow.value = msg1.trim(); }
