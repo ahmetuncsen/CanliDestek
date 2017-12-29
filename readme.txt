@@ -1,0 +1,1 @@
+-Kullanýcýnýn sorunlarýný chat dosyasýna kaydeden bir canlý destek modülü.

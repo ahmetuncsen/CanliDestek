@@ -60,22 +60,22 @@ var http_request=false;
 var http_request2=false;
 var intUpdate;
 
-/* http_request for writing */
+
 function ajax_request(url){http_request=false;if(window.XMLHttpRequest){http_request=new XMLHttpRequest();if(http_request.overrideMimeType){http_request.overrideMimeType('text/xml');}}else if(window.ActiveXObject){try{http_request=new ActiveXObject("Msxml2.XMLHTTP");}catch(e){try{http_request=new ActiveXObject("Microsoft.XMLHTTP");}catch(e){}}}
 if(!http_request){alert('Giving up :( Cannot create an XMLHTTP instance');return false;}
 http_request.onreadystatechange=alertContents;http_request.open('GET',url,true);http_request.send(null);}
 function alertContents(){if(http_request.readyState==4){if(http_request.status==200){rec_response(http_request.responseText);}else{}}}
 
-/* http_request for reading */
+
 function ajax_request2(url){http_request2=false;if(window.XMLHttpRequest){http_request2=new XMLHttpRequest();if(http_request2.overrideMimeType){http_request2.overrideMimeType('text/xml');}}else if(window.ActiveXObject){try{http_request2=new ActiveXObject("Msxml2.XMLHTTP");}catch(e){try{http_request2=new ActiveXObject("Microsoft.XMLHTTP");}catch(e){}}}
 if(!http_request2){alert('Giving up :( Cannot create an XMLHTTP instance');return false;}
 http_request2.onreadystatechange=alertContents2;http_request2.open('GET',url,true);http_request2.send(null);}
 function alertContents2(){if(http_request2.readyState==4){if(http_request2.status==200){rec_chatcontent(http_request2.responseText);}else{}}}
 
-/* chat stuff */
+
 chatmsg.focus()
-var show_newmsg_on_bottom=1;     /* set to 0 to let new msg´s appear on top */
-var waittime=3000;        /* time between chat refreshes (ms) */
+var show_newmsg_on_bottom=1; 
+var waittime=3000;       
 
 intUpdate=window.setTimeout("read_cont();", waittime);
 chatwindow.value = "lutfen sorununuzu yazin...";

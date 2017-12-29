@@ -9,7 +9,7 @@
     
     $waittime_sec = 0;
 
-    /* spam keywords */
+    /* yasak kelime */
    
     $spam[] = "bok";
 
